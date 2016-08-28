@@ -2,31 +2,12 @@
   "parser": "babel-eslint",
   "extends": "airbnb",
   "env": {
-    "browser": true
+    "browser": true,
+    "mocha": true
   },
   "rules": {
-    "react/jsx-curly-spacing": 0,
-    "react/jsx-uses-react": 2,
-    "react/jsx-uses-vars": 2,
-    "react/react-in-jsx-scope": 2,
-    "react/prefer-stateless-function": 0,
-    "no-var": 1,
-    "vars-on-top": 1,
-    "comma-dangle": 0,
-    "no-use-before-define": 0,
-    "no-irregular-whitespace": 0,
-    "no-underscore-dangle": 0,
     "global-require": 0,
-    "import/no-unresolved": 0
-  },
-  "plugins": [
-    "react"
-  ],
-  "settings": {
-    "import/resolver": {
-      "webpack": {
-        "config": "./webpack.config.js"
-      }
-    }
+    "import/no-extraneous-dependencies": 0,
+    "import/imports-first": 0,
   }
 }

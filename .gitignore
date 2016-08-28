@@ -7,3 +7,6 @@ logs
 
 # Dependency Directory
 node_modules
+
+# Built Library
+lib
