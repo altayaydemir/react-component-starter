@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import Test from '../../../lib/';
+
+import Test from '../../dist';
+import '../../dist/style.css';
 
 class App extends Component {
   componentWillMount() {}
@@ -7,7 +9,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        React Component Starter
+        <h1>React Component Starter</h1>
         <Test />
       </div>
     );

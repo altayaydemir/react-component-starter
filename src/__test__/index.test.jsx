@@ -1,14 +1,10 @@
-// Core
+import { shallow } from 'enzyme';
 import React from 'react';
-import { expect } from 'chai';
-import { mount } from 'enzyme';
+import TestComponent from '../';
 
-// Component
-import Test from '../';
-
-describe('Test of Test component...', () => {
-  it('renders correctly', () => {
-    const wrapper = mount(<Test />);
-    expect(wrapper).to.have.length(1);
+describe('TestComponent Test', () => {
+  it('renders without exploding', () => {
+    const wrapper = shallow(<TestComponent />);
+    expect(wrapper.length).toEqual(1);
   });
 });

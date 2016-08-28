@@ -9,4 +9,7 @@ logs
 node_modules
 
 # Built Library
-lib
+dist
+
+# Coverage Reports
+coverage

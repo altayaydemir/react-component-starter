@@ -1,14 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
+import style from './style.scss';
 
-class Test extends Component {
-  componentWillMount() {
-    console.log('TEST!');
-  }
+class Test extends React.Component {
+  componentWillMount() {}
 
   render() {
     return (
-      <div>
-        Test!
+      <div className={style.Wrapper}>
+        Testing!
       </div>
     );
   }

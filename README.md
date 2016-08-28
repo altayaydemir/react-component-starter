@@ -1,10 +1,8 @@
 # React Component Starter
 
-Starter project for making reusable React Components. 
+Starter project for making reusable React Components.
 
 Includes linting, testing and example project setup.
-
-It also builds your example application into `docs` folder so you can just serve it from Github Pages.
 
 ## Installation
 
@@ -13,22 +11,41 @@ $ git clone git@github.com:altayaydemir/react-component-starter.git
 
 $ cd react-component-starter
 
-$ npm install
+$ npm install 
 
 ```
 
 ## Usage
 
+### Development
+
 ```bash
-# while developing your component
-$ npm run dev
+# run this while developing your component
+$ npm run start
 
-# build the release version
+# run documentation project (separately from first one)
+$ npm run start:docs
+```
+
+### Production Build
+
+```bash
+# build the library
+$ npm run build:lib
+
+# build the docs
+$ npm run build:docs
+
+# build'em all!
 $ npm run build
+```
 
-# run example project that uses your component
-$ npm start
+### Testing
 
-# build example project into docs folder
-$ npm run buld
+```bash
+# run tests in watch mode
+$ npm run test:watch
+
+# run tests and generate code coverage
+$ npm run test
 ```

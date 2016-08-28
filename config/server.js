@@ -1,21 +1,21 @@
 const webpack = require('webpack');
 const WebpackDevServer = require('webpack-dev-server');
-const config = require('./webpack.dev');
+const webpackConfig = require('../config/webpack/docs.dev');
+const config = require('../config');
 
-const port = process.env.PORT || 8000;
-const host = process.env.HOST || 'localhost';
-
-new WebpackDevServer(webpack(config), {
-  publicPath: config.output.publicPath,
+new WebpackDevServer(webpack(webpackConfig), {
+  publicPath: webpackConfig.output.publicPath,
   hot: true,
-  historyApiFallback: true,
+  historyApiFallback: {
+    index: webpackConfig.output.publicPath,
+  },
   stats: {
     colors: true,
   },
-}).listen(port, host, (err) => {
+}).listen(config.port, config.host, (err) => {
   if (err) {
     console.log(err);
   }
 
-  console.log(`Listening at ${host}:${port}`);
+  console.log(`Listening at ${config.host}:${config.port}`);
 });
