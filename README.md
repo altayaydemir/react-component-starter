@@ -1,8 +1,16 @@
 # React Component Starter
 
-Starter project for making reusable React Components.
+<p align="center">
+  <img src="https://s10.postimg.org/wtlotfkmx/Desktop_HD.png" />
+  <b>Starter project for crafting React Components.</b>
+</p>
 
-Includes linting, testing and example project setup.
+## Features
+
+* [CSS modules](https://github.com/css-modules/) configuration with SCSS syntax, 
+* ESlint configuration with [Airbnb's React Styleguide](https://github.com/airbnb/javascript/tree/master/react), 
+* Testing setup powered by [Jest](https://github.com/facebook/jest) & [Enzyme](https://github.com/airbnb/enzyme/), 
+* Example project configuration which builds directly into `docs` folder as a static webpage so you can serve it from Github repository.
 
 ## Installation
 
@@ -17,7 +25,7 @@ $ npm install
 
 ## Usage
 
-### Development
+### Development Flow
 
 ```bash
 # run this while developing your component
