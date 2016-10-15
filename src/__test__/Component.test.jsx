@@ -1,10 +1,10 @@
 import { shallow } from 'enzyme';
 import React from 'react';
-import TestComponent from '../';
+import Component from '../Component';
 
-describe('TestComponent Test', () => {
+describe('Component Test', () => {
   it('renders without exploding', () => {
-    const wrapper = shallow(<TestComponent />);
+    const wrapper = shallow(<Component />);
     expect(wrapper.length).toEqual(1);
   });
 });

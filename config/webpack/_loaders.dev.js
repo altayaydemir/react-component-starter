@@ -1,5 +1,4 @@
 const config = require('../');
-const extractCSS = require('./_extractCSS');
 
 module.exports = [
   {
@@ -12,16 +11,16 @@ module.exports = [
   },
   {
     test: /\.scss/,
-    loader: extractCSS.extract(
+    loaders: [
       'style',
-      'css-loader?modules=true&localIdentName=[local]___[hash:base64:5]!postcss!sass?sourceMap'
-    ),
+      'css-loader?modules=true&localIdentName=[name]___[local]!postcss!sass?sourceMap',
+    ],
   },
   {
     test: /\.css/,
-    loader: extractCSS.extract(
+    loaders: [
       'style',
-      'css'
-    ),
+      'css',
+    ],
   },
 ];
