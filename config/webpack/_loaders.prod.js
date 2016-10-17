@@ -14,7 +14,7 @@ module.exports = [
     test: /\.scss/,
     loader: extractCSS.extract(
       'style',
-      'css-loader?modules=true&localIdentName=[name]___[local]!postcss!sass'
+      'css-loader?modules=true&localIdentName=[folder]__[local]!postcss!sass'
     ),
   },
   {

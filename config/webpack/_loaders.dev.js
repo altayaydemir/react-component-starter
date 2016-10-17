@@ -13,7 +13,7 @@ module.exports = [
     test: /\.scss/,
     loaders: [
       'style',
-      'css-loader?modules=true&localIdentName=[name]___[local]!postcss!sass?sourceMap',
+      'css-loader?modules=true&localIdentName=[folder]__[local]!postcss!sass?sourceMap',
     ],
   },
   {

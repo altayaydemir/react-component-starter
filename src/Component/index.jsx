@@ -1,16 +1,16 @@
 import React from 'react';
-import style from './Component.scss';
+import style from './style.scss';
 
-class Test extends React.Component {
+class Component extends React.Component {
   componentWillMount() {}
 
   render() {
     return (
       <div className={style.Wrapper}>
-        Testing!
+        Componenting!
       </div>
     );
   }
 }
 
-export default Test;
+export default Component;

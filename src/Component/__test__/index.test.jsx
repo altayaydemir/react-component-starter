@@ -1,6 +1,6 @@
 import { shallow } from 'enzyme';
 import React from 'react';
-import Component from '../Component';
+import Component from '../';
 
 describe('Component Test', () => {
   it('renders without exploding', () => {
