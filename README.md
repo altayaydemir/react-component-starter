@@ -7,10 +7,10 @@
 
 ## Features
 
-* [CSS modules](https://github.com/css-modules/) configuration with SCSS syntax, 
-* ESlint configuration with [Airbnb's React Styleguide](https://github.com/airbnb/javascript/tree/master/react), 
-* Testing setup powered by [Jest](https://github.com/facebook/jest) & [Enzyme](https://github.com/airbnb/enzyme/), 
-* Example project configuration which builds into `docs` folder as a static webpage so you can serve it from Github repository.
+* [CSS modules](https://github.com/css-modules/) configuration with SCSS syntax
+* ESlint configuration with [Airbnb's React Styleguide](https://github.com/airbnb/javascript/tree/master/react)
+* Testing setup powered by [Jest](https://github.com/facebook/jest) & [Enzyme](https://github.com/airbnb/enzyme/)
+* Example project configuration which builds into `docs` folder as a static webpage so you can serve it from Github repository
 
 ## Installation
 
@@ -19,7 +19,16 @@ $ git clone git@github.com:altayaydemir/react-component-starter.git
 
 $ cd react-component-starter
 
-$ npm install 
+### Yarn
+# Install yarn package manager
+$ npm install yarn -g 
+
+# Install project dependencies
+$ yarn
+
+### NPM
+# Install project dependencies
+$ npm install
 
 ```
 
@@ -29,31 +38,31 @@ $ npm install
 
 ```bash
 # run this while developing your component
-$ npm run start
+$ (yarn or npm) run start
 
 # run documentation project (separately from first one)
-$ npm run start:docs
+$ (yarn or npm) run start:docs
 ```
 
 ### Production Build
 
 ```bash
 # build the library
-$ npm run build:lib
+$ (yarn or npm) run build:lib
 
 # build the docs
-$ npm run build:docs
+$ (yarn or npm) run build:docs
 
 # build'em all!
-$ npm run build
+$ (yarn or npm) run build
 ```
 
 ### Testing
 
 ```bash
 # run tests in watch mode
-$ npm run test:watch
+$ (yarn or npm) run test:watch
 
 # run tests and generate code coverage
-$ npm run test
+$ (yarn or npm) run test
 ```
