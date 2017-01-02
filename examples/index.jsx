@@ -8,7 +8,7 @@ render(
   <AppContainer>
     <App />
   </AppContainer>,
-  document.getElementById('app')
+  document.getElementById('app'),
 );
 
 // Hot Reload Config
@@ -20,7 +20,7 @@ if (module.hot) {
       <AppContainer>
         <NextApp />
       </AppContainer>,
-      document.getElementById('app')
+      document.getElementById('app'),
     );
   });
 }
