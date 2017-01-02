@@ -26,10 +26,6 @@ $ npm install yarn -g 
 # Install project dependencies
 $ yarn
 
-### NPM
-# Install project dependencies
-$ npm install
-
 ```
 
 ## Usage
@@ -38,31 +34,34 @@ $ npm install
 
 ```bash
 # run this while developing your component
-$ (yarn or npm) run start
+$ yarn run start
 
 # run documentation project (separately from first one)
-$ (yarn or npm) run start:docs
+$ yarn run start:docs
+
+# run both tasks concurrently
+$ yarn run dev
 ```
 
 ### Production Build
 
 ```bash
 # build the library
-$ (yarn or npm) run build:lib
+$ yarn run build:lib
 
 # build the docs
-$ (yarn or npm) run build:docs
+$ yarn run build:docs
 
 # build'em all!
-$ (yarn or npm) run build
+$ yarn run build
 ```
 
 ### Testing
 
 ```bash
 # run tests in watch mode
-$ (yarn or npm) run test:watch
+$ yarn run test:watch
 
 # run tests and generate code coverage
-$ (yarn or npm) run test
+$ yarn run test
 ```
